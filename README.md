@@ -70,6 +70,8 @@ g++ -shared -O2 -o myuac.dll dll/myuac.cpp -lshell32 -ladvapi32 -lole32
 pip install colorama tabulate
 ```
 
+# 📖 usage
+
 ### Scanning Mode
 
 ```
