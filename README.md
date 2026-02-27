@@ -84,7 +84,7 @@ python MyUac.py --scan
 python MyUac.py --scan-per
 ```
 
-#⚡ Exploitation Mode
+# ⚡ Exploitation Mode
 
 ```
 # Execute UAC Bypass:
