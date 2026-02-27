@@ -1,4 +1,4 @@
-### 🔓 UAC Bypass & Persistence Toolkit
+# 🔓 UAC Bypass & Persistence Toolkit
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Advanced UAC Evasion & Persistence Detection Framework**
+**Native Windows UAC Evasion & Persistence Detection Framework**
 
 [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Methods](#-methods) • [Disclaimer](#-disclaimer)
 
@@ -17,7 +17,7 @@
 
 ## 🎯 Overview
 
-A professional-grade security testing toolkit designed for **red team operations** and **penetration testing**. This tool provides comprehensive scanning and exploitation capabilities for Windows UAC bypass techniques and persistence mechanisms.
+A professional-grade **native Windows** security testing toolkit designed for **red team operations** and **penetration testing**. Built with pure Win32 API for maximum compatibility and minimal footprint.
 
 > ⚠️ **Educational & Authorized Testing Purposes Only**
 
@@ -27,30 +27,32 @@ A professional-grade security testing toolkit designed for **red team operations
 
 | Category | Capabilities |
 |----------|-------------|
-| **🔍 Reconnaissance** | Automated system fingerprinting (UAC level, build number, elevation status) |
+| **🔍 Reconnaissance** | Native system fingerprinting (UAC level, build number, elevation status) |
 | **🛡️ Vulnerability Assessment** | 15+ UAC bypass method compatibility detection |
 | **💀 Persistence Analysis** | 11 persistence technique viability scanning |
-| **⚡ Execution Engine** | Native DLL integration for reliable exploitation |
-| **🎨 User Experience** | Color-coded output with detailed tabular reporting |
+| **⚡ Execution Engine** | Pure Win32 API implementation (no external dependencies) |
+| **🎨 User Experience** | Color-coded Python wrapper with detailed tabular reporting |
 
 ---
 
 ## 🚀 Installation
 
 ### Prerequisites
-- Windows 7/10/11 (x64 recommended)
-- Python 3.7+
-- Visual C++ Redistributable
+- Windows 7/10/11 (x64/x86)
+- Python 3.7+ (for wrapper only)
+- Visual Studio / MinGW (for compilation)
 
-### Setup
+### Build from Source
 
 ```bash
 # Clone repository
 git clone https://github.com/Mr-Spect3r/UAC-Toolkit.git
 cd UAC-Toolkit
 
-# Install Python dependencies
-pip install colorama tabulate
+# Compile native DLL (MSVC)
+cl /LD /O2 myuac.cpp /Fe:myuac.dll /link shell32.lib advapi32.lib ole32.lib
 
-# Build native DLL (Visual Studio)
-cl /LD myuac.cpp /Fe:myuac.dll /link shell32.lib advapi32.lib
+# Or using MinGW
+g++ -shared -O2 -o myuac.dll myuac.cpp -lshell32 -ladvapi32 -lole32
+```
+
