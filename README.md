@@ -21,6 +21,10 @@ A professional-grade **native Windows** security testing toolkit designed for **
 
 > ⚠️ **Educational & Authorized Testing Purposes Only**
 
+## Screenshot|Scan Uac
+
+<img src="https://github.com/user-attachments/assets/dfa86ceb-99bb-4adb-97fb-2a2f0ea40a72">
+
 ---
 
 ## ✨ Features
