@@ -29,7 +29,7 @@ except ImportError:
 
 init(autoreset=True)
 
-dll = ctypes.CDLL(os.path.join(os.path.dirname(__file__), "myuac.dll"))
+dll = ctypes.CDLL(os.path.join(os.path.dirname(__file__), "dll/myuac.dll"))
 
 for i in range(1, 16):
     f = getattr(dll, f"uacm{i}")
@@ -192,4 +192,5 @@ def main():
     else: usage()
 
 if __name__ == "__main__":
+
     main()
