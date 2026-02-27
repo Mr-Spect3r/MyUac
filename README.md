@@ -9,8 +9,7 @@
 
 **Native Windows UAC Evasion & Persistence Detection Framework**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Methods](#-methods) • [Disclaimer](#-disclaimer)
-
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Methods](#-methods)
 </div>
 
 ---
@@ -101,8 +100,8 @@ python MyUac.py -m 2 C:\Windows\System32\cmd.exe
 ```
 # Execute UAC Bypass
 
-python uacpwn.py -p <method_id> <path_to_executable>
+python MyUac.py -p <method_id> <path_to_executable>
 # Example:
-python uacpwn.py -p 5 C:\Tools\backdoor.exe
+python MyUac.py -p 5 C:\Windows\System32\cmd.exe
 
 ```
