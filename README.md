@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Native Windows UAC Evasion & Persistence Detection Framework**
+**Windows UAC Evasion & Persistence Detection Framework**
 
 [Features](#-features) • [Installation](#-installation) • [Usage](#-usage)
 </div>
@@ -16,7 +16,7 @@
 
 ## 🎯 Overview
 
-A professional-grade **native Windows** security testing toolkit designed for **red team operations** and **penetration testing**. Built with pure Win32 API for maximum compatibility and minimal footprint.
+A professional-grade **Windows** security testing toolkit designed for **red team operations** and **penetration testing**. Built with pure Win32 API for maximum compatibility and minimal footprint.
 
 > ⚠️ **Educational & Authorized Testing Purposes Only**
 
