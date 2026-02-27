@@ -56,7 +56,7 @@ A professional-grade **Windows** security testing toolkit designed for **red tea
 git clone https://github.com/Mr-Spect3r/MyUac
 cd MyUac
 
-# Compile native DLL (MSVC)
+# Compile DLL (MSVC)
 cl /LD /O2 myuac.cpp /Fe:dll/myuac.dll /link shell32.lib advapi32.lib ole32.lib
 
 # Or using MinGW
