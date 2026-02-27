@@ -54,8 +54,8 @@ A professional-grade **native Windows** security testing toolkit designed for **
 
 ```bash
 # Clone repository
-git clone https://github.com/Mr-Spect3r/UAC-Toolkit.git
-cd UAC-Toolkit
+git clone https://github.com/Mr-Spect3r/MyUac
+cd MyUac
 
 # Compile native DLL (MSVC)
 cl /LD /O2 myuac.cpp /Fe:dll/myuac.dll /link shell32.lib advapi32.lib ole32.lib
@@ -75,13 +75,13 @@ pip install colorama tabulate
 ```
 # Scan UAC Bypass Methods:
 
-python uacpwn.py --scan
+python MyUac.py --scan
 ```
 
 ### Scan Persistence Techniques:
 
 ```
-python uacpwn.py --scan-per
+python MyUac.py --scan-per
 ```
 
 #⚡ Exploitation Mode
@@ -89,19 +89,18 @@ python uacpwn.py --scan-per
 ```
 # Execute UAC Bypass:
 
-python uacpwn.py -m <method_id> <path_to_executable>
-```
+python MyUac.py -m <method_id> <path_to_executable>
 
 # Example:
 
-```
-python uacpwn.py -m 2 C:\Windows\System32\cmd.exe
+python MyUac.py -m 2 C:\Windows\System32\cmd.exe
 ```
 
-## Execute UAC Bypass
-
 ```
+# Execute UAC Bypass
+
 python uacpwn.py -p <method_id> <path_to_executable>
 # Example:
 python uacpwn.py -p 5 C:\Tools\backdoor.exe
+
 ```
