@@ -9,7 +9,7 @@
 
 **Native Windows UAC Evasion & Persistence Detection Framework**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Methods](#-methods)
+[Features](#-features) • [Installation](#-installation) • [Usage](#-usage)
 </div>
 
 ---
