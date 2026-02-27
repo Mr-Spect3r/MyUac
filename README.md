@@ -50,9 +50,9 @@ git clone https://github.com/Mr-Spect3r/UAC-Toolkit.git
 cd UAC-Toolkit
 
 # Compile native DLL (MSVC)
-cl /LD /O2 myuac.cpp /Fe:myuac.dll /link shell32.lib advapi32.lib ole32.lib
+cl /LD /O2 myuac.cpp /Fe:dll/myuac.dll /link shell32.lib advapi32.lib ole32.lib
 
 # Or using MinGW
-g++ -shared -O2 -o myuac.dll myuac.cpp -lshell32 -ladvapi32 -lole32
+g++ -shared -O2 -o myuac.dll dll/myuac.cpp -lshell32 -ladvapi32 -lole32
 ```
 
