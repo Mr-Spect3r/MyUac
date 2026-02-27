@@ -98,7 +98,7 @@ python MyUac.py -m 2 C:\Windows\System32\cmd.exe
 ```
 
 ```
-# Execute UAC Bypass
+# Execute Persistence
 
 python MyUac.py -p <method_id> <path_to_executable>
 # Example:
